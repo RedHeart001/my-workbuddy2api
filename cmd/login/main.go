@@ -43,7 +43,7 @@ const (
 )
 
 // 登录 state 落盘路径（var 便于测试替换临时文件）
-var stateFile = "/tmp/wb2api-login-state.json"
+var stateFile = "./wb2api-login-state.json"
 
 // exitFunc 供测试替换（默认 os.Exit；测试持临时替换为 panic 以进程内捕获 fatal）。
 var exitFunc = os.Exit
